@@ -9,12 +9,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-//@SpringBootApplication
-//@EnableScheduling
-//@EnableTransactionManagement  // 启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
-//@MapperScan(basePackages = "com.yinghao.notification.dao", markerInterface = MyMapper.class)
 @SpringBootApplication
-//启注解事务管理
+@EnableScheduling
 @EnableTransactionManagement  // 启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
 @MapperScan(basePackages = "com.yinghao.notification.dao", markerInterface = MyMapper.class)
 public class Application extends SpringBootServletInitializer {

@@ -9,5 +9,5 @@ public interface CourseServiceInter extends BaseServiceInter<Course> {
     /**
      * 定时发送课程
      */
-    void sendCourseTask();
+    public void sendCourseTask();
 }
